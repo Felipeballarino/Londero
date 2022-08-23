@@ -1,0 +1,99 @@
+.contenedor{
+    background: var(--primary);
+    display: flex;
+    color:white;
+    padding: .7rem 0;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    z-index: 100;
+    position: fixed;
+}
+.navigate{
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+    font-size: 20px;
+}
+.navigate a{
+     text-decoration: none;
+     color: white;
+}
+.menuhambur{
+    display: none;
+}
+.navMobileActive{
+    display: none;
+}
+.navMobile{
+    display: none;
+}
+@media only screen and (max-width: 1024px) {
+    .navDesktop{
+        display: none;
+    }
+    .menuhambur{
+        display: block;
+
+    }
+    .menuhambur button{
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 30px;
+    }
+    .navMobile{
+        position: absolute;
+        background: var(--primary);
+        width: 100%;
+        top: 4rem;
+        transition: 2s ease-in-out;
+        transform: translateY(-140%);
+        opacity: 0;
+        z-index: -100;
+        visibility: hidden;
+        display: block;
+    }
+
+    .navMobileActive{
+        position: absolute;
+        background: var(--primary);
+        width: 100%;
+        top: 4rem;
+        transition: 2s ease-in-out;
+        transform: translateY(0%);
+        opacity: 1;
+        display: block;
+    }
+    
+    .navMobileActive ul, a{
+        text-align: center;
+        list-style: none;
+        padding: 0;
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+        margin: 0;
+        /* margin-left: 0.5krem; */
+    }
+
+    .navMobileActive li{
+        padding: 0.4rem 0;
+        border-bottom: 1px white solid;
+    }
+    .navMobile ul, a{
+        text-align: center;
+        list-style: none;
+        padding: 0;
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+        margin: 0;
+        /* margin-left: 0.5krem; */
+    }
+
+    .navMobile li{
+        padding: 0.4rem 0;
+        border-bottom: 1px white solid;
+    }
+  }

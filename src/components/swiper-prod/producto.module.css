@@ -1,0 +1,25 @@
+.slide{
+    width: 90%;
+}
+.card{
+    position: relative;
+    border-radius: 3px;
+}
+
+.card h1{
+    background: var(--primary);
+    width: 100%;
+    font-size: 30px;
+    color:white;
+    position:absolute;
+    margin: 0;
+    padding: 0.3rem 0;
+    font-weight: 100;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 3px;
+}

@@ -1,0 +1,53 @@
+.destacados {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 90%;
+}
+
+.contenedorCard{
+  position: relative;
+  box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.432);
+  border-radius: 3px;
+  overflow: hidden; 
+  height: 260px;
+  transition: 1s all ease;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 1s all ease;
+  transform: translateY(0%) !important;
+}
+.ver{
+  width: 100%;
+}
+
+.card:hover {
+  transform: translateY(-12%) !important;
+}
+
+@media only screen and (max-width: 1024px) {
+ 
+  .destacados{
+    justify-content: space-between;
+    padding: 0 1rem 2rem 3rem;
+    overflow-x: scroll; 
+    margin-bottom: 1rem;
+    width: 90%;
+  }
+  
+  
+  .contenedorCard{
+    width: 260px;
+    overflow:visible
+  }
+  .card:hover {
+    transform: translateY(0%);
+  }
+
+
+}
